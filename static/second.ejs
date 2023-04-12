@@ -14,24 +14,30 @@
           <span style="color: aliceblue;">Lab 04</span>
         </div>
       </nav><br><br>
-    <h1 style="text-align: center;">Clientes</h1>
-    <table class="table">
+    <h1 style="text-align: center;">Clientes</h1><br>
+    <div style="margin: 0em 4em 0em 4em">
+      <table class="table">
         <thead>
           <tr >
+            <th scope="col-md-2">#</th>
             <th scope="col-md-2">Nombre</th>
             <th scope="col-md-2">Apellido</th>
             <th scope="col-md-2">Edad</th>
           </tr>
         </thead>
         <tbody>
+          <%  a=1 %>
           <% resultado.forEach((item)=>{ %>
           <tr>
+            <td> <%= a %> </td>
             <td> <%= item.nombre %> </td>
             <td> <%= item.apellido %> </td>
             <td> <%= item.edad %></td>
           </tr>
-          <% }); %>
+          <%  a = a +1 }); %>
         </tbody>
       </table>
+    </div>
+    
 </body>
 </html>
